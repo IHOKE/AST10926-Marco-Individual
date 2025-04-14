@@ -319,3 +319,39 @@ section {
 	transform: rotate(-0.2deg)
 	}
 }
+
+.s-achiev {
+	border-top: solid 0.5px;
+	margin-bottom:150px;
+}
+
+.s-achiev h1 {
+	margin: 10px 0 20px 0;
+	font-size: 50px;
+	font-weight: 700;
+}
+
+.achiev-l {
+	padding: 30px;
+}
+
+.achiev-l img {
+	height: 60px;
+}
+
+.achiev-l p {
+	text-align: justify;
+	font-size: 20px;
+}
+
+.achiev-img {
+	height: 400px;
+	overflow:hidden;
+	padding: 30px;
+}
+
+.achiev-img img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
