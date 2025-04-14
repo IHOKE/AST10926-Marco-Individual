@@ -1,13 +1,9 @@
 <!DOCTYPE html>
-
-
 <html lang="zh-HK">
-
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>逆风翻盘｜HK Basketball Journey</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>逆风翻盘｜HK Basketball Journey</title>
 
 	<!-- Preconnect to Google Fonts-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,60 +11,47 @@
 
 	<!-- Font Downloads -->
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
-    
+	
 	<!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/master.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="master.css" rel="stylesheet">
 </head>
 
 
 
 <body class="body-main">
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 	<!-- GSAP -->
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Draggable.min.js"></script>
 	
-    <nav class="navbar navbar-expand-lg navbar-blur">
-        <div class="container">
+	<nav class="container-fluid g-0">
+		<div class="row">
 
-            <a class="navbar-brand" href=" ">
+			<div class="col-2 nav-icon g-0">
+				<img src="images/logo.png" alt="Marco Icon">
+			</div>
 
-				<div class="navbar-icon">
-                	<img src="images/logo.png" alt="球衣图标">
-				</div>
+			<ul class="col g-0">
+				<li><a lang="zh-HK" href="">頁首</a></li>
+				<li><a lang="zh-HK" href="">三大成就</a></li>
+				<li><a lang="zh-HK" href="">数据王者</a></li>
+			</ul>
 
-                <div class="navbar-brand-text v-center"><p>Marco Something</p></div>
-
-            </a >
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="nav-menu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#hero">首页</a ></li>
-                    <li class="nav-item"><a class="nav-link" href="#achievements">三大成就</a ></li>
-                    <li class="nav-item"><a class="nav-link" href="#stats">数据王者</a ></li>
-                </ul>
-            </div>
-
-        </div>
-    </nav>
-
-
-    <header>
-		
-		<div class="header-text">
-			<h1>从板凳到MVP</h1>
-			<p>征战历程 数据揭秘</p>
 		</div>
+	</nav>
 
-    </header>
+
+	<header>
+		
+		<div class="header-space"></div>
+		<h1 lang="zh-HK">从板凳到MVP</h1>
+		<p lang="zh-HK">征战历程 数据揭秘</p>
+
+	</header>
 
 	
 	<section class="s1">
@@ -110,9 +93,14 @@
 		</div>
 	</section>
 
-
-	<section class="s2">
+	<div class="s-header" style="margin-top: 100px;">
+		<div class="basketball"></div>
+		<div class="s-header-divider"></div>
 		<h1>「北區三人籃球賽」</h1>
+	</div>
+
+	<section class="s-match">
+
 		<div class="match-container container-fluid b-solid g-0">
 			<div class="row g-0">
 				<div class="col-8 match-img">
@@ -120,7 +108,6 @@
 				</div>
 
 				<div class="col g-0 match-r">
-					
 					<div class="container-fluid g-0">
 
 						<div class="row">
@@ -130,7 +117,7 @@
 							</div>
 
 							<div class="col g-0">
-								<p style="padding: 5px;">2022年<br>1月8日</p>
+								<p style="padding: 5px;" lang="zh-HK">2022年<br>1月8日</p>
 							</div>
 
 						</div>
@@ -142,7 +129,7 @@
 							</div>
 
 							<div class="col g-0">
-								<p style="padding: 5px;">2022年<br>1月8日</p>
+								<p style="padding: 5px;" lang="zh-HK">1:00 P.M.<br>4:30 P.M.</p>
 							</div>
 
 						</div>
@@ -154,7 +141,19 @@
 							</div>
 
 							<div class="col g-0">
-								<p style="padding: 5px;">2022年<br>1月8日</p>
+								<p style="padding: 5px;" lang="zh-HK">北區運動場<br>室外籃球場</p>
+							</div>
+
+						</div>
+
+						<div class="row">
+
+							<div class="col-4 match-r-icon">
+								<img src="images/logo-group.svg">
+							</div>
+
+							<div class="col g-0">
+								<p style="padding: 5px;" lang="zh-HK">男子中學組<br>十七歲以下</p>
 							</div>
 
 						</div>
@@ -162,82 +161,166 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<div class="slide-container">
+		<div class="container-fluid g-0 slide-row" style="margin-top: 100px;" id="slide-row1">
+
+			<div class="slide">
+				<div class="slide-img">
+					<img src="images/placeholder.svg">
+				</div>
+				<h6>Header</h6>
+				<p>Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD. Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD.</p>
+			</div>
+
+			<div class="slide">
+				<div class="slide-img">
+					<img src="images/placeholder.svg">
+				</div>
+				<h6>Header</h6>
+				<p>Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD. Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD.</p>
+			</div>
+			
+			<div class="slide">
+				<div class="slide-img">
+					<img src="images/placeholder.svg">
+				</div>
+				<h6>Header</h6>
+				<p>Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD. Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD.</p>
+			</div>
+			
+			<div class="slide">
+				<div class="slide-img">
+					<img src="images/placeholder.svg">
+				</div>
+				<h6>Header</h6>
+				<p>Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD. Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD.</p>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="scripts/loop-horizontal.js"></script>
+	<script>loopHorizontal(".slide", "#slide-row1", 0.5 );</script>
 
 
+	<div class="s-header" style="margin-top: 100px;">
+		<div class="basketball"></div>
+		<div class="s-header-divider"></div>
+		<h1>「北區三人籃球賽」</h1>
+	</div>
+
+	<section class="s-match">
+
+		<div class="match-container container-fluid b-solid g-0">
 			<div class="row g-0">
-				<div class="col text-center">
-					<p>男子中學組 十六歲或以下(2005年或之後出生)</p>
+				<div class="col-8 match-img">
+					<img src="images/match2.jpg">
+				</div>
+
+				<div class="col g-0 match-r">
+					<div class="container-fluid g-0">
+
+						<div class="row">
+
+							<div class="col-4 match-r-icon">
+								<img src="images/logo-calendar.svg">
+							</div>
+
+							<div class="col g-0">
+								<p style="padding: 5px;" lang="zh-HK">2022年<br>1月8日</p>
+							</div>
+
+						</div>
+
+						<div class="row">
+
+							<div class="col-4 match-r-icon">
+								<img src="images/logo-time.svg">
+							</div>
+
+							<div class="col g-0">
+								<p style="padding: 5px;" lang="zh-HK">1:00 P.M.<br>4:30 P.M.</p>
+							</div>
+
+						</div>
+
+						<div class="row">
+
+							<div class="col-4 match-r-icon">
+								<img src="images/logo-venue.svg">
+							</div>
+
+							<div class="col g-0">
+								<p style="padding: 5px;" lang="zh-HK">北區運動場<br>室外籃球場</p>
+							</div>
+
+						</div>
+
+						<div class="row">
+
+							<div class="col-4 match-r-icon">
+								<img src="images/logo-group.svg">
+							</div>
+
+							<div class="col g-0">
+								<p style="padding: 5px;" lang="zh-HK">男子中學組<br>十七歲以下</p>
+							</div>
+
+						</div>
+						
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-<div class="slide-container">
-	<div class="container-fluid g-0 slide-row" style="margin-top: 100px;">
+	<div class="slide-container">
+		<div class="container-fluid g-0 slide-row" style="margin-top: 100px;" id="slide-row2">
 
-		<div class="slide">
-			<div class="slide-img">
-				<img src="images/placeholder.svg">
+			<div class="slide">
+				<div class="slide-img">
+					<img src="images/placeholder.svg">
+				</div>
+				<h6>Header</h6>
+				<p>Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD. Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD.</p>
 			</div>
-			<h6>Header</h6>
-			<p>Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD. Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD.</p>
-		</div>
 
-		<div class="slide">
-			<div class="slide-img">
-				<img src="images/placeholder.svg">
+			<div class="slide">
+				<div class="slide-img">
+					<img src="images/placeholder.svg">
+				</div>
+				<h6>Header</h6>
+				<p>Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD. Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD.</p>
 			</div>
-			<h6>Header</h6>
-			<p>Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD. Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD.</p>
-		</div>
-		
-		<div class="slide">
-			<div class="slide-img">
-				<img src="images/placeholder.svg">
+			
+			<div class="slide">
+				<div class="slide-img">
+					<img src="images/placeholder.svg">
+				</div>
+				<h6>Header</h6>
+				<p>Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD. Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD.</p>
 			</div>
-			<h6>Header</h6>
-			<p>Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD. Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD.</p>
-		</div>
-		
-		<div class="slide">
-			<div class="slide-img">
-				<img src="images/placeholder.svg">
+			
+			<div class="slide">
+				<div class="slide-img">
+					<img src="images/placeholder.svg">
+				</div>
+				<h6>Header</h6>
+				<p>Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD. Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD.</p>
 			</div>
-			<h6>Header</h6>
-			<p>Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD. Paragraph Lorem Ipsum something just kidding because I made this paragraph up instead of copying it from other website, well just for this section XDDD.</p>
-		</div>
 
+		</div>
 	</div>
-</div>
 
 	<script src="scripts/loop-horizontal.js"></script>
-	<script>loopHorizontal(".slide", ".slide-row", 0.5 );</script>
-
-
-    <!-- 三大成就区 -->
-    <section id="achievements" class="py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">荣耀时刻</h2>
-
-
-
-            <div class="row">
-                <!-- 成就卡片 -->
-                <div class="col-md-4">
-                    <div class="card h-100 card-hover">
-                        <img src="assets/img/championship.jpg" class="card-img-top" alt="冠军时刻">
-                        <div class="card-body">
-                            <h3 class="card-title">2024港岛三对三冠军</h3>
-                            <p class="card-text">决赛关键数据：18分7篮板4助攻</p >
-                            <div class="skill-bars">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 更多成就卡片... -->
-            </div>
-        </div>
-    </section>
-
+	<script>loopHorizontal(".slide", "#slide-row2", 0.5 );</script>
+	
+	<section class="s-achiev">
+		<h1 lang="zh-HK">我的籃球生涯</h1>
+	</section>
+		
 </body>
 </html>

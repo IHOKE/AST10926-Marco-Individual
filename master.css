@@ -1,0 +1,321 @@
+@charset "utf-8";
+/* Helper */
+
+.b-solid {
+	border: solid;
+}
+
+.v-center {
+	position: relative;
+	transform: translateY(-50%);
+	top: 50%;
+}
+
+.h-center {
+	position: relative;
+	transform: translateX(-50%);
+	left: 50%;
+}
+
+/* Main */
+
+:root {
+	--color-black: #212529;
+}
+
+.body-main {
+	background-color: var(--color-black);
+	color: white;
+}
+
+[lang="zh-HK"] {
+	font-family: 'Noto Sans TC', serif !important;
+}
+
+/* HTML */
+
+nav {
+	padding: 20px 3vw 20px 4.5vw!important;
+	border-bottom: solid 0.75px;
+
+	position: sticky !important;
+	top: 0px;
+
+	background-color: var(--color-black);
+	z-index: 1000;
+}
+
+
+.nav-icon {
+	overflow: hidden;
+	display: inline-block;
+
+	height: 40px;
+	width: 100px;
+}
+
+.nav-icon img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+nav ul {
+	height: 40px;
+	margin: auto;
+
+	text-align: right;
+}
+
+nav li{
+	height: 40px;
+	padding: 3px;
+
+	display: inline-block;
+}
+
+nav a {
+	text-decoration: none;
+	color: white !important;
+	font-size: 20px;
+	padding: 15px 20px !important;
+
+	transition: 0.1s ease-in-out;
+	border-radius: 5px;
+}
+
+nav a:hover {
+	background-color: #5C4272;
+}
+
+header {
+	min-height: 300px;
+	height: 40vw !important;
+	max-height: 400px;
+
+	padding: 0px 5vw;
+
+	background-image: url(images/header.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.header-space {
+	min-height: 150px;
+	height: 25vw;
+	max-height: 250px;
+}
+
+header h1 {
+	font-size: 50px;
+	font-weight: 700;
+}
+
+header p {
+	font-size: 20px;
+}
+
+section {
+	padding: 0px 10vw;
+}
+
+.s1 {
+	height: 750px;
+	padding: 50px 10vw;
+}
+
+.s1-card {
+	height: 100%;
+	border: solid;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.s1-left {
+	height: 647px;
+	border-right: solid;
+}
+
+.s1-portrait {
+	overflow: hidden;
+	height: 500px;
+}
+
+.s1-portrait img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.s1-bottom {
+	border-top: solid;
+	height: 100%;
+	padding: 30px 0px;
+}
+
+.s1-bottom h1{
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.s1-right {
+	font-size: 20px;
+
+	padding: 40px 30px;
+	text-align: justify;
+	word-break: inter-word;
+
+	height: 600px;
+	overflow-y: auto;
+}
+
+.s-header-divider {
+	border-top: solid 5px;
+	width: 100%;
+}
+
+.s-header h1 {
+	text-align: center;
+	margin: 0px 10vw;
+	padding:20px;
+	border-radius: 0px 0px 15px 15px !important;
+	font-size: 60px;
+	font-weight: 700;
+	margin-bottom: 30px;
+
+	color: var(--color-black);
+	background-color: white;
+}
+
+.match-container {
+	border-radius: 15px;
+	overflow: hidden;
+	background-color: white;
+	color: var(--color-black);
+}
+
+.match-img {
+	margin: 20px;
+	min-height: 350px;
+	height: 30vw;
+	max-height: 600px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.match-img img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.match-r {
+	height: 370px;
+	overflow: hidden;
+	padding: 20px;
+}
+
+.match-r p {
+	font-size: 19px;
+}
+
+.match-r-icon {
+	height: 70px;
+	width: 70px;
+	padding: 5px;
+}
+
+.match-r-icon img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.match-bottom {
+	padding: 20px;
+	height: 100%;
+}
+
+
+.slide-container {
+	width: 100%;
+	overflow: hidden;
+}
+
+.slide-row {
+	width: 100%;
+	white-space: nowrap;
+}
+
+.slide {
+	width: 400px;
+
+	display: inline-block;
+	border-right: solid;
+	padding: 40px 40px;
+}
+
+.slide-img {
+	height: 200px;
+	overflow: hidden;
+
+	border-radius: 10px;
+}
+
+.slide-img img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.slide h6 {
+	font-size: 30px;
+	font-weight: 600;
+	margin-top: 30px;
+}
+
+.slide p {
+	height: 100px;
+
+	white-space: pre-wrap;
+	text-align: justify;
+	overflow-y: auto;
+}
+
+/* HTML: <div class="basketball"></div> */
+.basketball {
+	margin: 0 3vw;
+	height: 100px;
+	aspect-ratio: 1;
+	position: relative;
+}
+
+.basketball::before,
+.basketball::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 50%;
+	transform-origin: bottom;
+}
+
+.basketball::after {
+	background-image:url(images/logo-basketball.svg);
+	background-repeat: no-repeat;
+	animation: l20 5s infinite cubic-bezier(0.5,120,0.5,-120);
+}
+
+@keyframes l20 {
+
+	0%,100% {
+	transform: rotate(0deg)
+	}
+
+	49.99% {
+	transform: rotate(0.2deg)
+	}
+
+	50% {
+	transform: rotate(-0.2deg)
+	}
+}
