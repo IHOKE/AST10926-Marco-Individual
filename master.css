@@ -561,8 +561,12 @@ section {
 
 footer {
 	background-color: var(--color-a);
+	padding: 5vw;
 }
 
+footer img {
+	mix-blend-mode: plus-lighter;
+}
 
 /* Divider */
 
@@ -599,8 +603,8 @@ footer {
 /* Footer Animation */
 @keyframes typing {
 	0% { width: 0; }
-	50% { width: 20.50ch; }
-	100% { width: 20.50ch; } /* Hold at the end for the delay */
+	70% { width: 20.50ch; }
+	100% { width: 20.50ch; }
 }
 
 @keyframes blink-caret {
@@ -608,15 +612,17 @@ footer {
 }
 
 .animation {
+
+	margin-bottom: 2vw;
+
 	font: bold 200% Consolas, Monaco, monospace;
-	font-size: 50px;
-	border-right: .1em solid black;
+	font-size: 4vw;
+	border-right: .1em solid var(--color-black);
 	width: 20.50ch;
-	margin: 0 2em;
 	white-space: nowrap;
 	overflow: hidden;
 	animation:
-	typing 3s steps(20, end) infinite alternate, /* Increased duration and removed alternate */
+	typing 3s steps(20, end) infinite alternate,
 	blink-caret .5s step-end infinite; 
 }
 
