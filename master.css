@@ -240,6 +240,14 @@ section {
 
 	height: 600px;
 	overflow-y: auto;
+
+	
+	h2{
+	color: #E6683B;
+	}
+	b{
+	color: #E6683B;
+	}
 }
 
 .s-header-divider {
@@ -360,6 +368,7 @@ section {
 	font-size: 30px;
 	font-weight: 600;
 	margin-top: 30px;
+	color: #E6683B;
 }
 
 .slide p {
@@ -547,6 +556,9 @@ section {
 	font-size: 20px;
 }
 
+.achiev-l h1{
+	color: #E6683B;
+}
 .achiev-img {
 	height: 400px;
 	overflow:hidden;
@@ -557,6 +569,7 @@ section {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+	border-radius: 15px;
 }
 
 footer {
@@ -610,6 +623,7 @@ footer img {
 @keyframes blink-caret {
 	50% { border-color: transparent; }
 }
+
 
 .animation {
 
